@@ -68,8 +68,25 @@ function tree($H) {
     echo "\n\n";
 }
 
+$size = 20;
 if (isset($argv[1]) && 0 < $argv[1]) {
-  tree($argv[1]);
-} else {
-  tree(20);
+  $size = $argv[1];
 }
+
+$time = 0;
+if (isset($argv[2]) && 0 < $argv[2]) {
+  $time = $argv[2];
+}
+
+if (0 < $time) {
+  system('clear');
+  tree($size);
+  while (0 < --$time) {
+    sleep(1);
+    system('clear');
+    tree($size);
+  }
+} else {
+  tree($size);
+}
+
