@@ -3,15 +3,16 @@ Author     : do_aki
 License    : MIT License
 Status     : Joke
 
-====================================
-What this
-====================================
+===============================
+   What this
+===============================
+Merry Christmas!
 
+===============================
+  Usage
+===============================
 
-====================================
-Usage
-====================================
-php xmas_tree.php [size] [times]
+$php xmas_tree.php [size] [times]
 
 size : Tree Size (default:20)
 times : times of drawing (default:1)
